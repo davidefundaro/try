@@ -11,6 +11,11 @@ library(renv)
 renv::init()
 renv::snapshot()
 
+conflict_prefer('select','dplyr','MASS')
+conflict_prefer('filter','dplyr','MASS')
+conflict_prefer('filter','dplyr','stats')
+conflicts_prefer(dplyr::filter)
+
 # KEYS:
 
 #function that finds possible keys of a table:
