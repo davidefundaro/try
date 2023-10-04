@@ -1,6 +1,7 @@
 install.packages("xlsx")
 install.packages("str2str")
 install.packages("conflicted")
+install.packages("renv")
 
 library(tidyr)
 library(readxl)
@@ -10,6 +11,7 @@ library(tidyverse)
 library(str2str)
 library(conflicted)
 library(rlang) 
+
 
 conflict_prefer('select','dplyr','MASS')
 conflict_prefer('filter','dplyr','MASS')
