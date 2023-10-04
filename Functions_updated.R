@@ -8,8 +8,7 @@ library(conflicted)
 library(rlang)
 library(renv)
 
-renv::init()
-renv::snapshot()
+
 
 conflict_prefer('select','dplyr','MASS')
 conflict_prefer('filter','dplyr','MASS')

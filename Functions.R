@@ -1,7 +1,5 @@
-install.packages("xlsx")
-install.packages("str2str")
-install.packages("conflicted")
-install.packages("renv")
+
+
 
 library(tidyr)
 library(readxl)
@@ -13,8 +11,7 @@ library(conflicted)
 library(rlang) 
 library(renv)
 
-renv::init()
-renv::snapshot()
+
 
 
 conflict_prefer('select','dplyr','MASS')
