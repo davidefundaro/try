@@ -11,6 +11,10 @@ library(tidyverse)
 library(str2str)
 library(conflicted)
 library(rlang) 
+library(renv)
+
+renv::init()
+renv::snapshot()
 
 
 conflict_prefer('select','dplyr','MASS')
