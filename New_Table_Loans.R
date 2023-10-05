@@ -1,12 +1,6 @@
-library(tidyr)
-library(readxl)
-library(dplyr)
-library(janitor)
-library(tidyverse)
-library(str2str)
-library(conflicted)
-library(rlang)
 
+#load the libraries and the functions
+source("Libraries.R")
 source("empty_column&tolower_functions.R")
 
 ###------------------------------------------###

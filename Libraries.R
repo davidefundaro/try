@@ -1,0 +1,13 @@
+library(tidyr)
+library(readxl)
+library(dplyr)
+library(janitor)
+library(tidyverse)
+library(str2str)
+library(conflicted)
+library(rlang)
+
+conflict_prefer('select','dplyr','MASS')
+conflict_prefer('filter','dplyr','MASS')
+conflict_prefer('filter','dplyr','stats')
+conflicts_prefer(dplyr::filter)
