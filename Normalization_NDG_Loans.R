@@ -23,7 +23,7 @@ source('Functions_updated.R')
 
 #Load NDG table:
 NDG_table <- read_excel("BCC.xlsx", sheet = "NDG")
-
+NDG_table <- read_excel("C:/Users/eleonora.zarrilli/Documents/CORSI/Dati R/esercizi/Normalizzazione_git_R/DATA/DATATAPE INVESTITORE  BCC ANNIA CUTOFF 25102022.xlsx", sheet = "NDG")
 #Basic modifications for column names and NAs removal:
 NDG_table <- NDG_table %>% rename(Region=`Borrower's Region`, Tax_ID = 'Tax ID', Name = 'BorrowerName')
 NDG_table$Group <- NDG_table$Group %>% gsub('-',NA,.)

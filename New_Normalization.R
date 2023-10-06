@@ -6,11 +6,8 @@
 source("Libraries.R")
 
 # load the function created in file: Functions.R:
-<<<<<<< HEAD
+
 source('Functions_updated.R')
-=======
-source('Functions.R')
->>>>>>> 4c836e95bc6c67bb2af86df7d6f29132c8e40197
 source("empty_column&tolower_functions.R")
 
 ###------------------------------------------###
