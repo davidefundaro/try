@@ -1,4 +1,4 @@
-
+  
 #load the libraries and the functions
 source("Libraries.R")
 source("empty_column&tolower_functions.R")
@@ -6,6 +6,7 @@ source("empty_column&tolower_functions.R")
 ###------------------------------------------###
 #---               load the data        -----
 ###------------------------------------------###
+#Loans_Raw <- read_excel("C:/Users/eleonora.zarrilli/Documents/CORSI/Dati R/esercizi/Normalizzazione_git_R/DATA/DATATAPE INVESTITORE  BCC ANNIA CUTOFF 25102022.xlsx", sheet = "LOANS")
 Loans_Raw <- read_excel("Data/BCC.xlsx", sheet = "LOANS")
 Loans_table <- Loans_Raw[-1, ] %>% row_to_names(1)
 
@@ -45,3 +46,7 @@ Loans$flag.imputed <- Loans$flag.imputed %>% as.integer()
 #rename date column and rearrange
 Loans <- Loans %>% rename("date.status" = "default.date")
 Loans <- Loans[,c(3,2,11:14,5,1,10,6:8,15,9,16,4,17,18)]
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4c836e95bc6c67bb2af86df7d6f29132c8e40197

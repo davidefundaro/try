@@ -6,7 +6,11 @@
 source("Libraries.R")
 
 # load the function created in file: Functions.R:
+<<<<<<< HEAD
 source('Functions_updated.R')
+=======
+source('Functions.R')
+>>>>>>> 4c836e95bc6c67bb2af86df7d6f29132c8e40197
 source("empty_column&tolower_functions.R")
 
 ###------------------------------------------###
@@ -18,8 +22,8 @@ source("empty_column&tolower_functions.R")
 ########               ########
 
 #Load NDG table:
-NDG_table <- read_excel("Data/BCC.xlsx", sheet = "NDG")
-
+#NDG_table <- read_excel("Data/BCC.xlsx", sheet = "NDG")
+NDG_table <- read_excel("C:/Users/eleonora.zarrilli/Documents/CORSI/Dati R/esercizi/Normalizzazione_git_R/DATA/DATATAPE INVESTITORE  BCC ANNIA CUTOFF 25102022.xlsx", sheet = "NDG")
 names(NDG_table) <- colname_function(names(NDG_table))
 
 #Basic modifications for column names and NAs removal:
@@ -78,7 +82,8 @@ print(possible_keys_NAs_perc)
 ########               ########
 
 # Load the Loans:
-Loans_Raw <- read_excel("Data/BCC.xlsx", sheet = "LOANS")
+#Loans_Raw <- read_excel("Data/BCC.xlsx", sheet = "LOANS")
+Loans_Raw <- read_excel("C:/Users/eleonora.zarrilli/Documents/CORSI/Dati R/esercizi/Normalizzazione_git_R/DATA/DATATAPE INVESTITORE  BCC ANNIA CUTOFF 25102022.xlsx", sheet = "LOANS")
 Loans <- Loans_Raw[-1, ] %>% row_to_names(1)
 
 names(Loans) <- colname_function(names(Loans))
