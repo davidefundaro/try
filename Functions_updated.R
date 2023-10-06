@@ -131,3 +131,22 @@ find_dependencies_matrix <- function(table) {
   }
   return(dependency_matrix)
 }
+
+########               ########
+   # see package version # 
+########               ########
+listInstalledPackages <- function() {
+  installed_packages <- installed.packages()
+  package_data <- data.frame(
+    Package = rownames(installed_packages),
+    Version = installed_packages[, "Version"],
+    stringsAsFactors = FALSE
+  )
+  return(package_data)
+}
+
+# Call the function to list installed packages and their versions
+installed_packages <- listInstalledPackages()
+
+# Print the results
+print(installed_packages)
