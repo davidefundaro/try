@@ -6,8 +6,7 @@
 source("Libraries.R")
 
 # load the function created in file: Functions.R:
-source('Functions.R')
-source('Matrix_function_dependencies.R')
+source('Functions_updated.R')
 source("empty_column&tolower_functions.R")
 
 ###------------------------------------------###

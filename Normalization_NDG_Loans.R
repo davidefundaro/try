@@ -10,8 +10,8 @@ install.packages("conflicted")
 source("Libraries.R")
 
 # load the function created in file: Functions.R:
-source('Functions.R')
-source('Matrix_function_dependencies.R')
+source('Functions_updated.R')
+
 
 ###------------------------------------------###
 #---            data preparation        -----
