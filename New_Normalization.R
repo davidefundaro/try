@@ -14,9 +14,9 @@ source("empty_column&tolower_functions.R")
 #---            data preparation        -----
 ###------------------------------------------###
 
-########               ########
-# first table # 
-########               ########
+###------------------------------------------###
+#---            first table       -----
+###------------------------------------------###
 
 #Load NDG table:
 #NDG_table <- read_excel("Data/BCC.xlsx", sheet = "NDG")
@@ -74,9 +74,9 @@ possible_keys_NAs_perc <- detect_primary_keys_NAs_perc(Borrowers_table_final,num
 print(possible_keys_NAs_perc)
 
 
-########               ########
-       # second table # 
-########               ########
+###------------------------------------------###
+#---            second table        -----
+###------------------------------------------###
 
 # Load the Loans:
 #Loans_Raw <- read_excel("Data/BCC.xlsx", sheet = "LOANS")

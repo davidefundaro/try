@@ -1,6 +1,7 @@
 
-
-# KEYS:
+###------------------------------------------###
+#---            primary keys        -----
+###------------------------------------------###
 
 #function that finds possible keys of a table:
 #check for the presence of duplicates and NAs and if it doesn't it is a possible key
@@ -31,7 +32,9 @@ detect_primary_keys_NAs_perc <- function(table,number_NAs,percentage) {
 
 
 
-# FORMATTING:
+###------------------------------------------###
+#---            formatting       -----
+###------------------------------------------###
 
 #function that capitalize the first letter and the letter after _ and the rest lowercase by splitting the string, modify the substring and unify:
 capitalize_after_underscore <- function(x) {
@@ -49,7 +52,9 @@ capitalize_after_underscore <- function(x) {
 
 
 
-# DEPENDENCIES:
+###------------------------------------------###
+#---            dependencies       -----
+###------------------------------------------###
 
 #check the functional dependencies of the columns against one (key) by grouping the data and counting the unique values:
 check_dependencies<- function(table, key) {
@@ -101,7 +106,9 @@ check <- function(table, key,con_o_senza_na){
 
 
 
-# PRINTING:
+###------------------------------------------###
+#---           printing       -----
+###------------------------------------------###
 
 #the check function return a list of two lists, this function print them in a readable way:
 print_list <- function(list){
@@ -132,9 +139,9 @@ find_dependencies_matrix <- function(table) {
   return(dependency_matrix)
 }
 
-########               ########
-   # see package version # 
-########               ########
+###------------------------------------------###
+#---           see package version       -----
+###------------------------------------------###
 listInstalledPackages <- function() {
   installed_packages <- installed.packages()
   package_data <- data.frame(

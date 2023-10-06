@@ -4,9 +4,9 @@
 vector <- c("utp", "bad")
 
 
-########               ########
-  # count errors function # 
-########               ########
+###------------------------------------------###
+#---            count errors        -----
+###------------------------------------------###
 # Create a dataframe
 values_to_check <- c("Utp", ".bad", "brr", "Autp", "bad", "lalala")
 values_to_check <- data.frame(Value = values_to_check)
@@ -37,9 +37,9 @@ cat("nella colonna ci sono", count_not_found, "insoliti")
 
 
 
-########               ########
-# tables from matrix function # 
-########               ########
+###------------------------------------------###
+#---            tables from matrix        -----
+###------------------------------------------###
 data<- Loans_matrix_rounded[c(2:40),]
 key <- "ndg" 
 

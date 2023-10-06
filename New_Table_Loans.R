@@ -46,7 +46,3 @@ Loans$flag.imputed <- Loans$flag.imputed %>% as.integer()
 #rename date column and rearrange
 Loans <- Loans %>% rename("date.status" = "default.date")
 Loans <- Loans[,c(3,2,11:14,5,1,10,6:8,15,9,16,4,17,18)]
-<<<<<<< HEAD
-=======
-
->>>>>>> 4c836e95bc6c67bb2af86df7d6f29132c8e40197
