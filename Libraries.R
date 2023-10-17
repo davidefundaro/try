@@ -1,3 +1,5 @@
+#install.packages("openxlsx", repos = "https://cloud.r-project.org")
+
 library(tidyr)
 library(readxl)
 library(dplyr)
@@ -6,6 +8,7 @@ library(tidyverse)
 library(str2str)
 library(conflicted)
 library(rlang)
+library(openxlsx)
 
 conflict_prefer('select','dplyr','MASS')
 conflict_prefer('filter','dplyr','MASS')

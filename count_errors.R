@@ -38,8 +38,26 @@ cat("nella colonna ci sono", count_not_found, "insoliti")
 
 
 ###------------------------------------------###
+#---  change values according to pattern  -----
+###------------------------------------------###
+change_Value_If_Pattern_Found <- function(df, col, pattern_replacement) {
+  for (i in names(pattern_replacement)) {
+    replacement <- pattern_replacement[[i]]
+    
+    matching_rows <- grepl(i, df[[col]], ignore.case = TRUE)
+    df[[col]][matching_rows] <- replacement
+  }
+  
+  return(df)
+}
+
+
+
+
+###------------------------------------------###
 #---            tables from matrix        -----
 ###------------------------------------------###
+
 data<- Loans_matrix_rounded[c(2:40),]
 key <- "ndg" 
 
@@ -66,4 +84,3 @@ tables_from_matrix <- function(data, key, k) {
 
 tabella_1 <- tables_from_matrix(data, key, TRUE)
 tabella_2 <- tables_from_matrix(data, key, FALSE)
-
